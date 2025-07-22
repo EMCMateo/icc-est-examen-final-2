@@ -24,7 +24,7 @@ public class App {
         }
         System.out.println();
         Map<Integer, Queue<Maquina>> maquinasAgrupadas = controller.agruparPorRiesgo(maquinas);
-        System.out.println("Maquinas agrupadas por nivel de riesgo:");
+        System.out.println("Maquinas agrupadas por nivel de riesgo :");
         for(Map.Entry<Integer, Queue<Maquina>> entry : maquinasAgrupadas.entrySet()){
             System.out.println("Nivel de riesgo " + entry.getKey().toString() + ": " + entry.getValue().toString());
         }
